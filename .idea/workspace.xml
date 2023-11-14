@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5675ad77-974b-4d72-9a38-87bc6e630d03" name="Changes" comment="" />
+    <list default="true" id="5675ad77-974b-4d72-9a38-87bc6e630d03" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/elihuso/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/elihuso/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/elihuso/handler/GetBookHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/elihuso/handler/GetBookHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/elihuso/handler/GetManageHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/elihuso/handler/GetManageHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/elihuso/handler/GetUserHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/elihuso/handler/GetUserHandler.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +28,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="rpxckjw1" />
   </component>
@@ -32,6 +41,7 @@
   "associatedIndex": 4
 }]]></component>
   <component name="ProjectId" id="2YAHuTeDXThudqL2lQ5AEX5S75I" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -40,7 +50,8 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "dart.analysis.tool.window.visible": "false"
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "master"
   }
 }]]></component>
   <component name="RunManager" selected="Gradle.lib-admin-backend [build]">

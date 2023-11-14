@@ -8,6 +8,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
 
 public class GetManageHandler implements HttpHandler {
     @Override
@@ -15,22 +16,15 @@ public class GetManageHandler implements HttpHandler {
         File file = new File("./json/admin.json");
         if (!file.exists()) {
             String response = "[{\"title\":\"Failed to Read File.\",\"description\":\"\",\"button1\":\"\",\"button2\":\"\"}]";
-            httpExchange.sendResponseHeaders(200, response.length());
+            httpExchange.sendResponseHeaders(200, response.getBytes().length);
             OutputStream outputStream = httpExchange.getResponseBody();
             outputStream.write(response.getBytes());
             outputStream.close();
             return;
         }
         try {
-            FileInputStream fileInputStream = new FileInputStream(file);
-            byte[] buffer = new byte[1024];
-            StringBuilder stringBuilder = new StringBuilder();
-            while (fileInputStream.read(buffer) != -1) {
-                stringBuilder.append(buffer);
-                buffer = new byte[1024];
-            }
-            String response = stringBuilder.toString();
-            httpExchange.sendResponseHeaders(200, response.length());
+            String response = new String(Files.readAllBytes(file.toPath()));
+            httpExchange.sendResponseHeaders(200, response.getBytes().length);
             OutputStream outputStream = httpExchange.getResponseBody();
             outputStream.write(response.getBytes());
             outputStream.close();
@@ -39,7 +33,7 @@ public class GetManageHandler implements HttpHandler {
             String title = ex.getMessage();
             String description = ex.toString();
             String response = "\"title\":\"" + title + "\",description:\"" + description + "\",\"button1\":\"\",\"button2\":\"\"}]";
-            httpExchange.sendResponseHeaders(200, response.length());
+            httpExchange.sendResponseHeaders(200, response.getBytes().length);
             OutputStream outputStream = httpExchange.getResponseBody();
             outputStream.write(response.getBytes());
             outputStream.close();

@@ -12,7 +12,7 @@ public class GetBookHandler implements HttpHandler {
         File file = new File("./json/book.json");
         if (!file.exists()) {
             String response = "[{\"title\":\"Failed to Read File.\",\"description\":\"\",\"button1\":\"\",\"button2\":\"\"}]";
-            httpExchange.sendResponseHeaders(200, response.length());
+            httpExchange.sendResponseHeaders(200, response.getBytes().length);
             OutputStream outputStream = httpExchange.getResponseBody();
             outputStream.write(response.getBytes());
             outputStream.close();
@@ -20,7 +20,7 @@ public class GetBookHandler implements HttpHandler {
         }
         try {
             String response = new String(Files.readAllBytes(file.toPath()));
-            httpExchange.sendResponseHeaders(200, response.length());
+            httpExchange.sendResponseHeaders(200, response.getBytes().length);
             OutputStream outputStream = httpExchange.getResponseBody();
             outputStream.write(response.getBytes());
             outputStream.close();
@@ -29,7 +29,7 @@ public class GetBookHandler implements HttpHandler {
             String title = ex.getMessage();
             String description = ex.toString();
             String response = "\"title\":\"" + title + "\",description:\"" + description + "\",\"button1\":\"\",\"button2\":\"\"}]";
-            httpExchange.sendResponseHeaders(200, response.length());
+            httpExchange.sendResponseHeaders(200, response.getBytes().length);
             OutputStream outputStream = httpExchange.getResponseBody();
             outputStream.write(response.getBytes());
             outputStream.close();
