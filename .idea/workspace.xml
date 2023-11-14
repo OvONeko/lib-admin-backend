@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5675ad77-974b-4d72-9a38-87bc6e630d03" name="Changes" comment="">
+    <list default="true" id="5675ad77-974b-4d72-9a38-87bc6e630d03" name="Changes" comment="[F] Fix random string">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/elihuso/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/elihuso/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/elihuso/handler/GetBookHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/elihuso/handler/GetBookHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/elihuso/handler/GetManageHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/elihuso/handler/GetManageHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/elihuso/handler/GetUserHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/elihuso/handler/GetUserHandler.java" afterDir="false" />
@@ -30,6 +29,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "LS-KR"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="1cfd347a-904f-45f3-b882-f189c419b62e" />
+        <option name="url" value="https://github.com/OvONeko/lib-admin-backend.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="rpxckjw1" />
@@ -113,6 +126,19 @@
       <option name="presentableId" value="Default" />
       <updated>1699961689085</updated>
     </task>
+    <task id="LOCAL-00001" summary="[F] Fix random string">
+      <option name="closed" value="true" />
+      <created>1699967515640</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1699967515640</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="[F] Fix random string" />
+    <option name="LAST_COMMIT_MESSAGE" value="[F] Fix random string" />
   </component>
 </project>

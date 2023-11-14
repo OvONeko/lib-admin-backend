@@ -9,11 +9,17 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
+import java.util.Collections;
 
 public class GetManageHandler implements HttpHandler {
     @Override
     public void handle(HttpExchange httpExchange) throws IOException {
         File file = new File("./json/admin.json");
+        httpExchange.getResponseHeaders().add("Content-Type", "application/json");
+        httpExchange.getResponseHeaders().add("Access-Control-Allow-Origin", "*");
+        httpExchange.getResponseHeaders().add("Access-Control-Allow-Headers","origin, content-type, accept, authorization");
+        httpExchange.getResponseHeaders().add("Access-Control-Allow-Credentials", "true");
+        httpExchange.getResponseHeaders().add("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS, HEAD");
         if (!file.exists()) {
             String response = "[{\"title\":\"Failed to Read File.\",\"description\":\"\",\"button1\":\"\",\"button2\":\"\"}]";
             httpExchange.sendResponseHeaders(200, response.getBytes().length);
