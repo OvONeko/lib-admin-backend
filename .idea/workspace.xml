@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5675ad77-974b-4d72-9a38-87bc6e630d03" name="Changes" comment="[F] Fix random string">
+    <list default="true" id="5675ad77-974b-4d72-9a38-87bc6e630d03" name="Changes" comment="[F] fix CORS">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/elihuso/handler/GetBookHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/elihuso/handler/GetBookHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/elihuso/handler/GetManageHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/elihuso/handler/GetManageHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/elihuso/handler/GetUserHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/elihuso/handler/GetUserHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/elihuso/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/elihuso/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,11 +132,20 @@
       <option name="project" value="LOCAL" />
       <updated>1699967515640</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="[F] fix CORS">
+      <option name="closed" value="true" />
+      <created>1699972584343</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1699972584343</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[F] Fix random string" />
-    <option name="LAST_COMMIT_MESSAGE" value="[F] Fix random string" />
+    <MESSAGE value="[F] fix CORS" />
+    <option name="LAST_COMMIT_MESSAGE" value="[F] fix CORS" />
   </component>
 </project>
