@@ -5,10 +5,6 @@ import com.sun.net.httpserver.HttpHandler;
 import io.github.elihuso.utils.GetFileUtils;
 
 import java.io.*;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.util.ArrayList;
-import java.util.Collections;
 
 public class GetUserHandler implements HttpHandler {
     @Override

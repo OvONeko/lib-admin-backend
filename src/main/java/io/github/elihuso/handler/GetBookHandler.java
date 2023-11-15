@@ -5,8 +5,6 @@ import com.sun.net.httpserver.HttpHandler;
 import io.github.elihuso.utils.GetFileUtils;
 
 import java.io.*;
-import java.nio.file.Files;
-import java.util.Collections;
 
 public class GetBookHandler implements HttpHandler {
     @Override
