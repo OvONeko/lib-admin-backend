@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5675ad77-974b-4d72-9a38-87bc6e630d03" name="Changes" comment="[+] PostAddHandler">
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/elihuso/config/ConfigManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/elihuso/config/ExistStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/config.yaml" afterDir="false" />
+    <list default="true" id="5675ad77-974b-4d72-9a38-87bc6e630d03" name="Changes" comment="[+] ConfigManager">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/elihuso/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/elihuso/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +65,10 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "master",
-    "settings.editor.selected.configurable": "editor.preferences.tabs"
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
 }]]></component>
   <component name="RunManager" selected="Gradle.lib-admin-backend [build]">
@@ -178,7 +178,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700295061408</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="[+] ConfigManager">
+      <option name="closed" value="true" />
+      <created>1700299856506</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1700299856506</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -199,6 +207,11 @@
     <MESSAGE value="[-] Delete unused import" />
     <MESSAGE value="[+] POST Handler" />
     <MESSAGE value="[+] PostAddHandler" />
-    <option name="LAST_COMMIT_MESSAGE" value="[+] PostAddHandler" />
+    <MESSAGE value="[+] ConfigManager" />
+    <option name="LAST_COMMIT_MESSAGE" value="[+] ConfigManager" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

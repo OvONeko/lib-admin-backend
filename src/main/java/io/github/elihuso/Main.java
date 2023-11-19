@@ -1,6 +1,7 @@
 package io.github.elihuso;
 
 import com.sun.net.httpserver.HttpServer;
+import io.github.elihuso.config.ConfigManager;
 import io.github.elihuso.handler.GetBookHandler;
 import io.github.elihuso.handler.GetManageHandler;
 import io.github.elihuso.handler.GetUserHandler;
@@ -11,6 +12,18 @@ import java.io.File;
 import java.net.InetSocketAddress;
 
 public class Main {
+
+    public static ConfigManager config;
+
+    static {
+        try {
+            config = new ConfigManager();
+        }
+        catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
     private static final File[] files = {
             new File("./json/user.json"),
             new File("./json/book.json"),
@@ -31,7 +44,7 @@ public class Main {
                 return;
             }
         }
-        HttpServer server = HttpServer.create(new InetSocketAddress(8086), 0);
+        HttpServer server = HttpServer.create(new InetSocketAddress(config.getPort()), 0);
         for (var v : route) {
             server.createContext(v.getPath(), v.getHandler());
         }
