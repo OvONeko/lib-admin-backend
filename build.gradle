@@ -15,7 +15,7 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter'
     compileOnly group: 'javax.persistence', name: 'persistence-api', version: '1.0'
     compileOnly group: 'javax.json', name: 'javax.json-api', version: '1.1.4'
-    compileOnly group: 'com.github.jsixface', name: 'yamlconfig', version: '1.1'
+    implementation 'com.github.jsixface:yamlconfig:1.0.1'
 }
 
 test {

@@ -15,7 +15,7 @@ public class GetManageHandler implements HttpHandler {
         httpExchange.getResponseHeaders().add("Access-Control-Allow-Headers","origin, content-type, accept, authorization");
         httpExchange.getResponseHeaders().add("Access-Control-Allow-Credentials", "true");
         httpExchange.getResponseHeaders().add("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS, HEAD");
-        String response = GetFileUtils.getFile("./json/book.json");
+        String response = GetFileUtils.getFile("./json/admin.json");
         httpExchange.sendResponseHeaders(200, response.getBytes().length);
         OutputStream outputStream = httpExchange.getResponseBody();
         outputStream.write(response.getBytes());
